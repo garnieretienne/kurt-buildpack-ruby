@@ -16,6 +16,6 @@ curl http://dl.dropbox.com/u/15270883/ruby-1.9.3.tgz -s -o - | tar zxf -
 # add vendor binaries to the path
 mkdir -p $build_dir/profile.d
 cat << EOF > $build_dir/profile.d/ruby.sh
-PATH="$HOME/vendor/1.9.3-p392/bin:$PATH"
+PATH="\$HOME/vendor/1.9.3-p392/bin:\$PATH"
 LANG=${LANG:-en_US.UTF-8}
 EOF
