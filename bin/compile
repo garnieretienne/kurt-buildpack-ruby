@@ -5,7 +5,8 @@ build_dir=$1
 cache_dir=$2
 
 indent() {
-  return_status=${?:0}
+  return_status=$?
+  echo "-----> STATUS: $return_status"
   sed -u 's/^/       /'
   return $return_status
 }
