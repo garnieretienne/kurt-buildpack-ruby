@@ -1,14 +1,14 @@
 #!/bin/bash
 
 # bin/compile BUILD_DIR CACHE_DIR
-build_dir = $1
-cache_dir = $2
+build_dir=$1
+cache_dir=$2
 
 indent() {
   sed -u 's/^/       /'
 }
 
 echo "-----> Install ruby 1.9.3 (1.9.3-p392)"
-mkdir -p $1/vendor
-cd $1/vendor
-curl http://dl.dropbox.com/u/15270883/ruby-1.9.3.tgz -s -o - | tar zxf -
+mkdir -p $build_dir/vendor
+cd $build_dir/vendor
+curl http://dl.dropbox.com/u/15270883/ruby-1.9.3.tgz -o - | tar zxf -
