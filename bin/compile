@@ -19,3 +19,9 @@ cat << EOF > $build_dir/profile.d/ruby.sh
 PATH="\$HOME/vendor/1.9.3-p392/bin:\$PATH"
 LANG=${LANG:-en_US.UTF-8}
 EOF
+
+# bundle install
+echo "-----> Install dependencies using bundle (version packaged)"
+PATH="$build_dir/vendor/1.9.3-p392/bin:$PATH
+LANG=LANG:-en_US.UTF-8
+bundle install --without development test --path vendor/bundle --deployment | indent
