@@ -6,6 +6,7 @@ cache_dir=$2
 
 indent() {
   return_status=${?:0}
+  echo "-----> RETURN STATUS $return_status"
   sed -u 's/^/       /'
   return return_status
 }
