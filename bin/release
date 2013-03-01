@@ -4,4 +4,7 @@ cat << EOF
 ---
 default_process_types:
   web: bundle exec rails server
+config_vars:
+  RAKE_ENV: production
+  RAILS_ENV: production
 EOF
