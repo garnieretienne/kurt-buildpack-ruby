@@ -4,6 +4,4 @@ cat << EOF
 ---
 default_process_types:
   web: bundle exec rails server
-config_vars:
-  PATH: \$HOME/vendor/1.9.3-p392:\$PATH
 EOF
