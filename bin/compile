@@ -5,10 +5,7 @@ build_dir=$1
 cache_dir=$2
 
 indent() {
-  return_status=$?
-  echo "-----> STATUS: $return_status"
   sed -u 's/^/       /'
-  return $return_status
 }
 
 echo "-----> Install ruby 1.9.3 (1.9.3-p392)"
@@ -28,4 +25,3 @@ echo "-----> Install dependencies using bundle (version packaged)"
 PATH="$build_dir/vendor/1.9.3-p392/bin:$PATH"
 LANG=LANG:-en_US.UTF-8
 bundle install --without development test --path vendor/bundle --deployment | indent
-exit $?
