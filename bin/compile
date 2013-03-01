@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# bin/compile BUILD_DIR CACHE_DIR
+
+indent() {
+  sed -u 's/^/       /'
+}
+
+echo "-----> Found a Rack file"
+echo "compiling stuff" | indent
