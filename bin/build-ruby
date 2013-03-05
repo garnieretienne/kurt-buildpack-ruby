@@ -1,0 +1,4 @@
+#
+# build-ruby 1.9.3 => tell rbenv to compile this version for this arch using the following compilation command:
+# ./configure--enable-load-relative --disable-install-doc
+# install bundler using `gem install bundler --env-shebang`
