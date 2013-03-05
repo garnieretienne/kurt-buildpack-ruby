@@ -12,7 +12,7 @@ echo "-----> Install ruby 1.9.3 (1.9.3-p392)"
 mkdir -p $build_dir/vendor
 cd $build_dir/vendor
 #curl http://dl.dropbox.com/u/15270883/ruby-1.9.3.tgz -s -o - | tar zxf -
-curl http://dl.dropbox.com/u/15270883/ruby-1.9.3-x86_64.tgz -s -o - | tar zxf -# x64
+curl http://dl.dropbox.com/u/15270883/ruby-1.9.3-x86_64.tgz -s -o - | tar zxf - # x64
 
 # add vendor binaries to the path
 mkdir -p $build_dir/profile.d
