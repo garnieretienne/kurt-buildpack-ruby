@@ -26,4 +26,4 @@ PATH="$build_dir/vendor/1.9.3-p392/bin:$PATH"
 GEM_PATH="$build_dir/vendor/1.9.3-p392"
 LANG=LANG:-en_US.UTF-8
 cd $build_dir
-$build_dir/vendor/1.9.3-p392/bin/bundle install --without development test --path vendor/bundle --deployment | indent
+bundle install --without development test --path vendor/bundle --deployment | indent
